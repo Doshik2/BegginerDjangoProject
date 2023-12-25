@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'accounts.apps.AccountsConfig', 
+    # 3rd party
+    "rest_framework", # new
+    "apis.apps.ApisConfig", 
 ]
 
 MIDDLEWARE = [
@@ -133,5 +136,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home" # new
 LOGOUT_REDIRECT_URL = "home" 
 
-# django_project/settings.py
-ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1"] # new
